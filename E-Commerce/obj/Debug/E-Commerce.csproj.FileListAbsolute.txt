@@ -1,0 +1,6 @@
+E:\ASP.NET-PROJ\E-Commerce\E-Commerce\bin\E-Commerce.dll.config
+E:\ASP.NET-PROJ\E-Commerce\E-Commerce\bin\E-Commerce.dll
+E:\ASP.NET-PROJ\E-Commerce\E-Commerce\bin\E-Commerce.pdb
+E:\ASP.NET-PROJ\E-Commerce\E-Commerce\obj\Debug\E-Commerce.csprojResolveAssemblyReference.cache
+E:\ASP.NET-PROJ\E-Commerce\E-Commerce\obj\Debug\E-Commerce.dll
+E:\ASP.NET-PROJ\E-Commerce\E-Commerce\obj\Debug\E-Commerce.pdb

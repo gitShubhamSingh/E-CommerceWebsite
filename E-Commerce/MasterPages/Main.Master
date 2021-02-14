@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="E_Commerce.MasterPages.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="width:100%">
+            <tr>
+                <td style="float:left;margin-left:30px;">
+                    <asp:Menu ID="Menu1" Orientation="Horizontal" runat="server" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Segoe UI" Font-Size="Large" ForeColor="#7C6F57" StaticSubMenuIndent="10px">
+                        <DynamicMenuItemStyle HorizontalPadding="15px" VerticalPadding="15px" ForeColor="White" BackColor="#BB1924"   />
+                        <DynamicHoverStyle BackColor="#107050"  ForeColor="White" />
+                        <DynamicSelectedStyle BackColor="#5D7B9D" />
+                        <Items>
+                            <asp:MenuItem Text="E-Commerce" Value="E-Commerce" NavigateUrl="~/Home.aspx" ToolTip="Go to Home Page"></asp:MenuItem>
+                            <asp:MenuItem Text="Products" Value="Products" ToolTip="Products" >
+                                <asp:MenuItem Text="Mobile" Value="Mobile" ToolTip="Mobile" NavigateUrl="~/Products.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                         </Items>
+                        <StaticHoverStyle Font-Underline="true"  />
+                        <StaticMenuItemStyle HorizontalPadding="15px" VerticalPadding="15px" BackColor="White" ForeColor="#BB1924"/>
+                        <StaticSelectedStyle BackColor="#5D7B9D" />
+                    </asp:Menu>
+                </td>
+                <td style="float:right;margin-right:30px;">
+                    <asp:Menu ID="Menu2" Orientation="Horizontal" runat="server" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Segoe UI" Font-Size="Large" ForeColor="#7C6F57" StaticSubMenuIndent="10px">
+                        <DynamicMenuItemStyle HorizontalPadding="15px" VerticalPadding="15px" ForeColor="White" BackColor="#BB1924"   />
+                        <DynamicHoverStyle BackColor="#107050"  ForeColor="White" />
+                        <DynamicSelectedStyle BackColor="#5D7B9D" />
+                        <Items>
+                            <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Home.aspx" ToolTip="Login"></asp:MenuItem>
+                            <asp:MenuItem Text="Cart (0)" Value="Cart" NavigateUrl="#" ToolTip="Cart"></asp:MenuItem>
+                            
+                       </Items>
+                       <StaticHoverStyle Font-Underline="true"  />
+                        <StaticMenuItemStyle HorizontalPadding="15px" VerticalPadding="15px" BackColor="White" ForeColor="#BB1924"/>
+                        <StaticSelectedStyle BackColor="#5D7B9D" />
+            </asp:Menu>
+        
+                </td>
+            </tr>
+        </table>
+        <hr  style="margin-top:-3px"/>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>
